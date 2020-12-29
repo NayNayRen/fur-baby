@@ -382,6 +382,10 @@ th {
   legend{
     font-size: 18px;
   }
+	
+  .main{
+    width: 100%;
+  }
 
   .main p{
     	font-size: 16px;
@@ -405,7 +409,7 @@ th {
   }
 }
 
-@media (max-width: 600px){
+@media (max-width: 500px){
 
   button{
     font-size: 15px;
@@ -418,6 +422,14 @@ th {
   .events-right{
     width: 150px;
   }
+	
+  .header h1{
+    font-size: 18px;
+  }
+
+  .header h3{
+    font-size: 16px;
+  }
 
   .main h2{
     font-size: 18px;
@@ -428,8 +440,7 @@ th {
   }
 
   .nav-container a{
-    font-size: 18px;
-    margin: 0 10px;
+    margin: 0 5px;
   }
 
   table caption{
