@@ -122,14 +122,14 @@ footer {
 	height: 100%;
 	position: absolute;
 	right: 0;
-	top: 0;
+	bottom: 0;
 }
 
 .header-left {
 	height: 100%;
 	position: absolute;
 	left: 0;
-	top: 0;
+	bottom: 0;
 }
 
 .home-top {
@@ -194,6 +194,7 @@ legend {
 	margin: 20px auto;
 	max-width: 80%;
 	padding: 25px;
+  text-align: left;
 	text-indent: 30px;
 }
 
@@ -306,10 +307,6 @@ th {
 	text-shadow: 0px 2px 4px rgba(0,0,0,0.85);
 }
 
-#wrapper{
-	display: flex;
-	flex-direction: column;
-}
 
 @media (max-width: 1000px){
 
@@ -382,7 +379,7 @@ th {
   legend{
     font-size: 18px;
   }
-	
+
   .main{
     width: 100%;
   }
@@ -422,9 +419,18 @@ th {
   .events-right{
     width: 150px;
   }
-	
+
+  .header{
+    height: 60px;
+  }
+
+  .header-right, .header-left{
+    height: 80%;
+  }
+
   .header h1{
     font-size: 18px;
+    margin: 0;
   }
 
   .header h3{
