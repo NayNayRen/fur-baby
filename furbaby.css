@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed&display=swap');
 
-/* import for cursive text */
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -16,33 +16,40 @@ body {
 }
 
 button {
+  -webkit-transition: all 150ms ease;
   background-color: #fff;
-  border: solid 1px #000;
   border-radius: 25px;
+  border: solid 1px #000;
   font-size: 18px;
   margin: 0 5px;
-  padding: 0 10px;
-  transition: background-color 150ms ease;
+  padding: 2px 15px;
+  transition: all 150ms ease;
 }
 
 button:hover {
   background-color: #808080;
-}
-
-caption {
-  font-family: 'Pacifico', cursive;
-  font-size: 20px;
-  margin-bottom: 5px;
+  color: #fff;
+  cursor: pointer;
 }
 
 .events-bottom {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
   border: 1px solid #000;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
   width: 450px;
 }
 
 .events-photo-container{
+  -ms-flex-align: center;
+  -ms-flex-direction: row;
+  -ms-flex-pack: distribute;
+  -ms-flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
   align-items: center;
+  display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -52,12 +59,15 @@ caption {
 }
 
 .events-photo {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
   border: 1px solid #000;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
   width: 400px;
 }
 
 .events-spca-logo{
+  -webkit-filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.75));
+  -webkit-transition: opacity 150ms ease;
   filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.75));
   transition: opacity 150ms ease;
   width: 250px;
@@ -71,19 +81,20 @@ fieldset {
   background-color: rgba(51, 102, 204, 0.75);
   border: none;
   margin: auto;
-  width: 90%;
   text-align: center;
+  width: 90%;
 }
 
 footer {
   background-color: #D8BFD8;
   border-top: solid 1px #000;
-  font-family: 'Pacifico', cursive;
-  text-align: center;
+  color: #000;
   padding: 5px 10px;
+  text-align: center;
 }
 
 .header {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
   background-color: #D8BFD8;
   border-bottom: solid 1px #000;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
@@ -100,10 +111,10 @@ footer {
   margin: 0;
   text-align: center;
   text-shadow: -1px 1px 1px #000,
-    1px 1px 1px #000,
-    1px -1px 0 #000,
-    -1px -1px 0 #000,
-    0 2px 2px #000;
+  1px 1px 1px #000,
+  1px -1px 0 #000,
+  -1px -1px 0 #000,
+  0 2px 2px #000;
 }
 
 .header h3 {
@@ -118,51 +129,67 @@ footer {
 }
 
 .header-right {
+  -webkit-filter: drop-shadow(0 15px 2px rgba(0, 0, 0, 0.25));
+  bottom: 0;
   filter: drop-shadow(0 15px 2px rgba(0, 0, 0, 0.25));
   position: absolute;
   right: 0;
-  bottom: 0;
   width: 150px;
 }
 
 .header-left {
-  filter: drop-shadow(0 15px 2px rgba(0, 0, 0, 0.25));
-  position: absolute;
-  left: 0;
+  -webkit-filter: drop-shadow(0 15px 2px rgba(0, 0, 0, 0.25));
   bottom: 0;
+  filter: drop-shadow(0 15px 2px rgba(0, 0, 0, 0.25));
+  left: 0;
+  position: absolute;
   width: 150px;
 }
 
 .home-image-container {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+  -webkit-transition: all 150ms ease;
   background-image: url('images/happy-pup.jpg');
   background-position: center;
   background-size: cover;
   border: 1px solid #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
-  margin: auto;
   height: 300px;
-  width: 500px;
+  margin: auto;
   position: relative;
   transition: all 150ms ease;
+  width: 500px;
 }
 
 .home-image-caption {
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+  -webkit-transform: rotate(-20deg);
   background-color: #000;
-  border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
   color: #fff;
   font-size: 18px;
+  left: -100px;
   padding: 5px;
   position: absolute;
   text-align: left;
   top: 20px;
   transform: rotate(-20deg);
-  left: -100px;
 }
 
 .image-box {
+  -ms-flex-align: center;
+  -ms-flex-direction: row;
+  -ms-flex-pack: center;
+  -ms-flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
   align-items: center;
+  display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -171,10 +198,11 @@ footer {
 }
 
 .image-box div {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
   border: 1px solid #000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
-  margin: 10px 15px;
   height: 325px;
+  margin: 10px 15px;
   width: 325px;
 }
 
@@ -199,14 +227,24 @@ legend {
 }
 
 .main {
+  -ms-flex-align: center;
+  -ms-flex-direction: column;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
   align-items: center;
   background-color: #DDA0DD;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+  display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   flex-direction: column;
-  margin: 25px auto;
   height: auto;
   justify-content: center;
+  margin: 25px auto;
   padding-bottom: 20px;
   position: relative;
   width: 75%;
@@ -228,16 +266,18 @@ legend {
 }
 
 .main p {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   background-color: #D8BFD8;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   font-size: 20px;
   margin: 20px auto;
-  width: 80%;
   padding: 25px;
   text-align: left;
+  width: 80%;
 }
 
 .main p a {
+  -webkit-transition: color 150ms ease;
   color: rgba(51, 102, 204, 0.75);
   text-decoration: none;
   transition: color 150ms ease;
@@ -248,10 +288,21 @@ legend {
 }
 
 .nav-container {
+  -ms-flex-align: center;
+  -ms-flex-direction: row;
+  -ms-flex-pack: center;
+  -ms-flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
   align-items: center;
   background-color: #DDA0DD;
   border-bottom: 1px solid #000;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+  display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -261,11 +312,13 @@ legend {
 }
 
 .nav-container a {
+  -webkit-transition: color 150ms ease;
   color: #000;
   font-size: 25px;
   margin: 0 30px;
   text-decoration: none;
   transition: color 150ms ease;
+
 }
 
 .nav-container a:hover {
@@ -274,67 +327,78 @@ legend {
 }
 
 .services-grid {
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr;
   grid-row-gap: 20px;
+  grid-template-columns: 1fr;
   justify-content: center;
 }
 
 .services-pix {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
   border: 1px solid #000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
   width: 500px;
 }
 
-.table-grid {
+.table-container {
+  -ms-flex-align: center;
+  -ms-flex-direction: row;
+  -ms-flex-pack: distribute;
+  -ms-flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
   align-items: center;
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: center;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
 }
 
 table {
-  border: solid 1px #000;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
   border-collapse: collapse;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.75);
-  margin: 15px 5px 0 5px;
-  width: 375px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+  margin: 15px;
+  width: 500px;
+
 }
 
 table a {
+  -webkit-transition: opacity 150ms ease;
+  color: #000;
   text-decoration: none;
-  transition: color 150ms ease;
+  transition: opacity 150ms ease;
+
 }
 
 table a:hover {
-  color: #87CEFA;
-}
+  cursor: pointer;
+  opacity: 0.5;
+  text-decoration: underline;
 
-table caption {
-  color: #fff;
-  font-size: 25px;
-  font-weight: normal;
-  text-shadow: -1px 1px 1px #000,
-    1px 1px 2px #000,
-    1px -1px 0 #000,
-    -1px -1px 0 #000,
-    0 4px 2px rgba(0, 0, 0, 0.85);
 }
 
 td {
-  background-color: #D8BFD8;
+  background-color: #DDA0DD;
+  color: #fff;
   font-size: 18px;
   padding: 10px;
   text-align: center;
 }
 
 th {
-  background-color: rgba(51, 102, 204, 0.75);
-  color: #fff;
-  font-size: 20px;
+  background-color: #D8BFD8;
+  color: #000;
+  font-size: 22px;
   padding: 10px;
   text-align: center;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.85);
 }
 
 @media (max-width: 1300px) {
@@ -381,15 +445,15 @@ th {
   }
 
   .main p {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     font-size: 18px;
-    width: 85%;
     padding: 20px;
+    width: 85%;
   }
 
   .services-pix {
     width: 400px;
   }
+
 }
 
 @media (max-width: 1000px) {
@@ -415,6 +479,7 @@ th {
   }
 
   .header-left, .header-right {
+    -webkit-filter: drop-shadow(0 10px 2px rgba(0, 0, 0, 0.25));
     filter: drop-shadow(0 10px 2px rgba(0, 0, 0, 0.25));
     width: 100px;
   }
@@ -457,14 +522,27 @@ th {
   }
 
   table {
-    width: 300px;
+    width: 400px;
   }
+
+  td {
+    font-size: 16px;
+  }
+
+  th {
+    font-size: 20px;
+  }
+
 }
 
 @media (max-width: 700px) {
 
   fieldset{
     width: 100%;
+  }
+
+  footer{
+    font-size: 14px;
   }
 
   .header h1 {
@@ -486,10 +564,10 @@ th {
   }
 
   .home-image-caption{
-    top: 0;
-    transform: rotate(0deg);
     left: 0;
     right: 0;
+    top: 0;
+    transform: rotate(0deg);
   }
 
   .image-box div {
@@ -525,13 +603,19 @@ th {
     width: 200px;
   }
 
-  .table-grid {
-    grid-template-columns: auto;
+  table{
+    margin: 15px auto;
+    width: 300px;
   }
 
-  table {
-    width: 200px;
+  td {
+    font-size: 14px;
   }
+
+  th {
+    font-size: 18px;
+  }
+
 }
 
 @media (max-width: 400px) {
@@ -595,11 +679,11 @@ th {
     margin: 0 5px;
   }
 
-  table caption {
-    font-size: 18px;
+  td {
+    font-size: 14px;
   }
 
-  td, th {
+  th{
     font-size: 16px;
   }
 }
