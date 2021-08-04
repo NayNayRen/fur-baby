@@ -147,8 +147,23 @@ footer {
 .image-box {
   align-items: center;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 75px;
+  margin-top: 30px;
+}
+
+.image-box div {
+  border: 1px solid #000;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.75);
+  margin: 10px 15px;
+  height: 325px;
+  width: 325px;
+}
+
+.image-box img{
+  width: 100%;
+  height: 100%;
 }
 
 input {
@@ -169,8 +184,6 @@ legend {
 .main {
   align-items: center;
   background-color: #DDA0DD;
-  border-radius: 5px;
-  border: 1px solid #000000;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
   display: flex;
   flex-direction: column;
@@ -240,14 +253,6 @@ legend {
 .nav-container a:hover {
   color: #87CEFA;
   text-decoration: overline;
-}
-
-.products-top-left, .products-top-right, .products-bottom-left, .products-bottom-right {
-  border-radius: 5px;
-  border: 2px solid #000;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.75);
-  margin: 0 15px;
-  max-width: 200px;
 }
 
 .services-grid {
@@ -340,6 +345,11 @@ th {
     width: 125px;
   }
 
+  .image-box div {
+    height: 275px;
+    width: 275px;
+  }
+
   .main {
     width: 85%;
   }
@@ -387,8 +397,9 @@ th {
     width: 400px;
   }
 
-  .image-box {
-    margin-top: 50px;
+  .image-box div {
+    height: 225px;
+    width: 225px;
   }
 
   .main {
@@ -408,11 +419,6 @@ th {
   .nav-container a {
     font-size: 22px;
     margin: 0 20px;
-  }
-
-  .products-top-left, .products-top-right, .products-bottom-left, .products-bottom-right {
-    margin: 0 5px;
-    width: 150px;
   }
 
   table {
@@ -455,9 +461,9 @@ th {
     right: 0;
   }
 
-  .image-box {
-    flex-direction: column;
-    margin-top: 10px;
+  .image-box div {
+    height: 175px;
+    width: 175px;
   }
 
   legend {
@@ -465,9 +471,6 @@ th {
   }
 
   .main {
-    border-radius: 0;
-    border-right: none;
-    border-left: none;
     width: 100%;
   }
 
