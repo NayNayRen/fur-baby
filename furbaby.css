@@ -16,18 +16,17 @@ body {
 }
 
 button {
-  background-color: #FFFFFF;
+  background-color: #fff;
   border: solid 1px #000;
   border-radius: 25px;
   font-size: 18px;
   margin: 0 5px;
   padding: 0 10px;
-  transition: background-color 500ms ease;
+  transition: background-color 150ms ease;
 }
 
 button:hover {
-  background-color: gray;
-  transition: background-color 500ms ease;
+  background-color: #808080;
 }
 
 caption {
@@ -37,17 +36,35 @@ caption {
 }
 
 .events-bottom {
-  border-radius: 5px;
-  border: 2px solid #000;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.75);
+  border: 1px solid #000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
   width: 450px;
 }
 
-.events-right {
-  border-radius: 5px;
-  border: 2px solid #000000;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.75);
-  width: 200px;
+.events-photo-container{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  width: 80%;
+}
+
+.events-photo {
+  border: 1px solid #000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+  width: 400px;
+}
+
+.events-spca-logo{
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.75));
+  transition: opacity 150ms ease;
+  width: 250px;
+}
+
+.events-spca-logo:hover{
+  opacity: 0.75;
 }
 
 fieldset {
@@ -83,10 +100,10 @@ footer {
   margin: 0;
   text-align: center;
   text-shadow: -1px 1px 1px #000,
-    1px 1px 2px #000,
+    1px 1px 1px #000,
     1px -1px 0 #000,
     -1px -1px 0 #000,
-    0 4px 2px rgba(0, 0, 0, 0.95);
+    0 2px 2px #000;
 }
 
 .header h3 {
@@ -95,7 +112,7 @@ footer {
   font-style: italic;
   margin-top: 0;
   text-shadow: -1px 1px 1px #fff,
-    1px 1px 2px #fff,
+    1px 1px 1px #fff,
     1px -1px 0 #fff,
     -1px -1px 0 #fff;
 }
@@ -155,7 +172,7 @@ footer {
 
 .image-box div {
   border: 1px solid #000;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
   margin: 10px 15px;
   height: 325px;
   width: 325px;
@@ -175,10 +192,10 @@ legend {
   font-family: 'Pacifico', cursive;
   font-size: 25px;
   text-shadow: -1px 1px 1px #000,
-    1px 1px 2px #000,
+    1px 1px 1px #000,
     1px -1px 0 #000,
     -1px -1px 0 #000,
-    0 4px 2px rgba(0, 0, 0, 0.95);
+    -2px 2px 2px #000;
 }
 
 .main {
@@ -205,7 +222,8 @@ legend {
   text-shadow: -1px 1px 1px #fff,
     1px 1px 2px #fff,
     1px -1px 0 #fff,
-    -1px -1px 0 #fff;
+    -1px -1px 0 #fff,
+    -2px 2px 2px #000;
   width: 100%;
 }
 
@@ -256,25 +274,16 @@ legend {
 }
 
 .services-grid {
-  background-color: #D8BFD8;
   display: grid;
-  grid-gap: 5px;
   grid-template-columns: 1fr;
+  grid-row-gap: 20px;
   justify-content: center;
-  margin: 0 auto 20px auto;
-  max-width: 80%;
-  padding: 5px;
-}
-
-.services-grid div {
-  background-color: #DDA0DD;
-  padding-bottom: 10px;
 }
 
 .services-pix {
-  border: 2px solid #000;
-  border-radius: 5px;
-  max-width: 300px;
+  border: 1px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+  width: 500px;
 }
 
 .table-grid {
@@ -329,6 +338,15 @@ th {
 }
 
 @media (max-width: 1300px) {
+
+  .events-photo {
+    width: 300px;
+  }
+
+  .events-spca-logo{
+    width: 200px;
+  }
+
   .header h1 {
     font-size: 40px;
   }
@@ -350,6 +368,10 @@ th {
     width: 275px;
   }
 
+  legend {
+    font-size: 22px;
+  }
+
   .main {
     width: 85%;
   }
@@ -364,15 +386,24 @@ th {
     width: 85%;
     padding: 20px;
   }
+
+  .services-pix {
+    width: 400px;
+  }
 }
 
 @media (max-width: 1000px) {
-  .events-bottom {
-    width: 400px;
-  }
 
   caption {
     font-size: 18px;
+  }
+
+  .events-photo {
+    width: 200px;
+  }
+
+  .events-spca-logo{
+    width: 150px;
   }
 
   .header h1 {
@@ -421,18 +452,18 @@ th {
     margin: 0 20px;
   }
 
+  .services-pix {
+    width: 300px;
+  }
+
   table {
     width: 300px;
   }
 }
 
 @media (max-width: 700px) {
-  .events-bottom {
-    width: 300px;
-  }
 
   fieldset{
-    padding: 0;
     width: 100%;
   }
 
@@ -467,7 +498,8 @@ th {
   }
 
   legend {
-    font-size: 18px;
+    font-size: 20px;
+    padding-left: 25px;
   }
 
   .main {
@@ -490,7 +522,7 @@ th {
   }
 
   .services-pix {
-    max-width: 200px;
+    width: 200px;
   }
 
   .table-grid {
@@ -507,12 +539,16 @@ th {
     font-size: 15px;
   }
 
-  .events-bottom {
-    width: 200px;
+  .events-photo-container{
+    width: 90%;
   }
 
-  .events-right {
-    width: 150px;
+  .events-spca-logo{
+    margin-top: 20px;
+  }
+
+  fieldset{
+    padding: 10px 0;
   }
 
   .header-left, .header-right {
@@ -535,6 +571,11 @@ th {
     border-left: none;
     border-right: none;
     width: 100%;
+  }
+
+  legend {
+    font-size: 18px;
+    padding-left: 15px;
   }
 
   .main h2 {
