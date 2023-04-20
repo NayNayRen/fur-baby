@@ -5,6 +5,15 @@
   box-sizing: border-box;
 }
 
+.active-page {
+  background-color: #000;
+  bottom: 0;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
 body {
   background-attachment: fixed;
   background-image: url("images/pier.jpg");
@@ -243,11 +252,11 @@ input {
 }
 
 legend {
+  background-color: #000;
   color: #fff;
   font-family: "Pacifico", cursive;
   font-size: 26px;
-  text-shadow: -1px 1px 1px #000, 1px 1px 1px #000, 1px -1px 0 #000,
-    -1px -1px 0 #000;
+  padding: 8px 15px 0 10px;
 }
 
 .main {
@@ -335,6 +344,7 @@ legend {
   color: #000;
   font-size: 25px;
   margin: 0 30px;
+  position: relative;
   text-decoration: none;
   transition: color 150ms ease;
 }
@@ -551,7 +561,7 @@ th {
   }
 
   .main h2 {
-    font-size: 25px;
+    font-size: 26px;
     padding-left: 30px;
   }
 
@@ -619,8 +629,8 @@ th {
   }
 
   legend {
-    font-size: 20px;
-    padding-left: 25px;
+    font-size: 22px;
+    margin-left: 25px;
   }
 
   .main {
@@ -633,7 +643,7 @@ th {
   }
 
   .main h2 {
-    font-size: 22px;
+    /* font-size: 24px; */
     padding-left: 20px;
   }
 
@@ -643,7 +653,7 @@ th {
   }
 
   .services-pix {
-    width: 200px;
+    width: 250px;
   }
 
   table {
@@ -698,11 +708,6 @@ th {
     border-left: none;
     border-right: none;
     width: 100%;
-  }
-
-  legend {
-    font-size: 18px;
-    padding-left: 15px;
   }
 
   .main h2 {
