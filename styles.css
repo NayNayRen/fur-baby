@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed&display=swap");
 
 * {
   -webkit-box-sizing: border-box;
@@ -149,6 +149,7 @@ footer h5:last-of-type {
   margin: 0;
   text-align: center;
   text-shadow: 0 2px 2px #000;
+  z-index: 1;
 }
 
 .header h3 {
@@ -262,8 +263,8 @@ legend {
   background-color: #000;
   color: #fff;
   font-family: "Pacifico", cursive;
-  font-size: 26px;
-  padding: 8px 15px 0 10px;
+  font-size: 22px;
+  padding: 0 15px;
 }
 
 .main {
@@ -484,10 +485,6 @@ th {
     width: 275px;
   }
 
-  legend {
-    font-size: 22px;
-  }
-
   .main {
     width: 85%;
   }
@@ -595,7 +592,7 @@ th {
   }
 
   .header h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .header h3 {
@@ -627,7 +624,7 @@ th {
   }
 
   legend {
-    font-size: 22px;
+    font-size: 20px;
     margin-left: 25px;
   }
 
@@ -646,7 +643,7 @@ th {
 
   .nav-container a {
     font-size: 18px;
-    margin: 0 15px;
+    margin: 0 10px;
   }
 
   .services-pix {
@@ -717,9 +714,14 @@ th {
     width: 100%;
   }
 
+  .nav-container {
+    -ms-flex-pack: space-evenly;
+    -webkit-box-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+
   .nav-container a {
-    font-size: 16px;
-    margin: 0 5px;
+    margin: 0;
   }
 
   td {
